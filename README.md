@@ -2,7 +2,7 @@
 One Billion Row Challenge (1BRC) is a fun coding exercise how far a program can be psuhed to aggregate  one billion rows from a text file.
 
 # Problem
-Input: Given a [text file](https://github.com/gunnarmorling/1brc/blob/main/data/weather_stations.csv) containing temperature values for a range of weather stations.  Each row is one measurement in the format:
+Input: Given a text file containing 1 billion temperature values for a range of weather stations.  Each row is one measurement in the format:
 *<string: station name;<float:measurement>*.
 
 Output: For each unique station find the min/max/average temperature recorded abd emit the final result on STDOUT in the station name's alphabetical 
@@ -17,3 +17,6 @@ Assumptions:
 
 # References
 This is loosly based off [1BRC Java](https://github.com/gunnarmorling/1brc). 
+
+# Step 1 
+Create a program that generate the 1 billion row measurments.txt file, [This Python program](https://github.com/gunnarmorling/1brc/blob/main/src/main/python/create_measurements.py) can be used as a starting point.
