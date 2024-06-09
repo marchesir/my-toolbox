@@ -1,0 +1,10 @@
+#cloud-config
+
+package_update: true
+package_upgrade: true
+
+ssh_authorized_keys:
+  - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAOkTm+mpEmgaxEcDYrCF63fpl9FHw4jxgAXHzf4lA0g richard@Richards-MacBook-Pro.local 
+
+runcmd:
+  - curl -fsSL https://get.docker.com -o get-docker.sh && sh get-docker.sh && sudo usermod -aG docker ubuntu 
