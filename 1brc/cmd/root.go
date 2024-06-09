@@ -6,8 +6,6 @@ import (
 	"github.com/spf13/cobra"
 )
 
-
-
 // rootCmd represents the base command when called without any subcommands
 var rootCmd = &cobra.Command{
 	Use:   "1brc",
@@ -32,6 +30,6 @@ func init() {
 
 	// Cobra also supports local flags, which will only run
 	// when this action is called directly.
-        rootCmd.CompletionOptions.DisableDefaultCmd = true  
+	rootCmd.CompletionOptions.DisableDefaultCmd = true
 	rootCmd.Flags().BoolP("verbose", "v", false, "Enable verbose output on STDOUT")
 }
