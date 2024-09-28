@@ -1,0 +1,9 @@
+{
+    "rust-analyzer.linkedProjects": [
+        "/Users/richard/code/my-toolbox/learn/rust/guessing_game/Cargo.toml",
+        "/Users/richard/code/my-toolbox/learn/rust/temp_converter/Cargo.toml",
+        "/Users/richard/code/my-toolbox/learn/rust/variables/Cargo.toml",
+        "/Users/richard/code/my-toolbox/learn/rust/ownership/Cargo.toml",
+        "/Users/richard/code/my-toolbox/learn/rust/structs/Cargo.toml"
+    ]
+}
