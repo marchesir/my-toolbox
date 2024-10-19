@@ -1,3 +1,5 @@
 config:
-  aws:region: eu-west-1
-  
+  aws:region: us-west-2
+  my-aws-nest:s3-base: "mys3"  
+environment:
+  - my-aws-nest/my-esc
