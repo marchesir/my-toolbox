@@ -17,3 +17,5 @@ unix_rand = random.randint(0, 32767)
 bucket = s3.Bucket(f"{s3_base}{unix_rand}")
 # Export the name of the bucket
 pulumi.export('bucket_name', bucket.id)
+     
+

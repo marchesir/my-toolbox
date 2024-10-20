@@ -1,0 +1,7 @@
+config:
+  aws:region: eu-west-2
+  my-aws-nest:app-name: "myapp"
+  my-aws-nest:services:
+    - s3  
+environment:
+  - global/esc-aws-s3full
