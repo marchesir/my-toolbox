@@ -4,4 +4,4 @@ runtime:
   options:
     toolchain: pip
     virtualenv: venv
-description: Baseline AWS infra automation
+description: Baseline AWS infra automation.

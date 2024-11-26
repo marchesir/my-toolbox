@@ -1,7 +1,13 @@
 config:
-  aws:region: eu-west-2
-  my-aws-nest:app-name: "myapp"
-  my-aws-nest:services:
-    - s3  
+  # valid aws region.
+  my-aws-nest:region: eu-west-2
+  # suported services:  
+  # s3: restricted access;
+  # eks: =+vpc+ecr;
+  # vpc: =+rt/gw/+private az ips;
+  my-aws-nest:service: s3
+  # Number of resources to created based on obove paramters, default to 1, max 10.
+  my-aws-nest:count: 1
 environment:
+  # Based on what service uncomment as needed.
   - global/esc-aws-s3full
