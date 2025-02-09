@@ -1,13 +1,13 @@
 config:
-  # valid aws region.
   my-aws-nest:region: eu-west-2
-  # suported services:  
-  # s3: restricted access;
-  # eks: =+vpc+ecr;
-  # vpc: =+rt/gw/+private az ips;
-  my-aws-nest:service: s3
-  # Number of resources to created based on obove paramters, default to 1, max 10.
-  my-aws-nest:count: 1
+  # https://www.pulumi.com/registry/packages/awsx/api-docs/ec2/vpc
+  my-aws-nest:vpc:
+      cidrBlock: 10.0.0.0/16
+      subnets:
+        - cidrBlock: 10.0.1.0/24
+          type: public
+        - cidrBlock: 10.0.2.0/24
+          type: private
 environment:
   # Based on what service uncomment as needed.
   - global/esc-aws-s3full

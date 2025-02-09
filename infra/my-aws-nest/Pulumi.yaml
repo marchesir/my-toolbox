@@ -1,7 +1,4 @@
 name: my-aws-nest
 runtime:
-  name: python
-  options:
-    toolchain: pip
-    virtualenv: venv
+  name: go
 description: Baseline AWS infra automation.
