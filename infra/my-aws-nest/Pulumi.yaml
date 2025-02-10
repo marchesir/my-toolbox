@@ -1,4 +1,4 @@
 name: my-aws-nest
 runtime:
   name: go
-description: Baseline AWS infra automation.
+description: Personal AWS account infrastructure.
