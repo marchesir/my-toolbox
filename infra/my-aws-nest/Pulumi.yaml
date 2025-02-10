@@ -1,4 +1,0 @@
-name: my-aws-nest
-runtime:
-  name: go
-description: Personal AWS account infrastructure.
